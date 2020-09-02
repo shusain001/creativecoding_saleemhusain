@@ -1,0 +1,18 @@
+void setup () 
+   {
+// (width,height) (5x6½ inches)= (480, 624)
+   size (480, 624);
+   background (50, 48, 59);
+   }
+void draw ()
+   {
+//border
+   noFill();
+   stroke (10,128,12);
+   rect(50, 50, 380, 524, 0, 0, 0, 0);
+//border
+   stroke (255, 255, 255);
+//line (x1, y1, x2, y2) 
+   line (50, 50, mouseX, mouseY);
+   }
+   
