@@ -1,0 +1,32 @@
+float Up = 0 ;
+void setup (){
+  size (1000,1000);
+  colorMode (HSB, 100,100,100);
+  background (0,0,100);
+  }
+
+  //dragtoadddots
+  void draw () {
+  stroke (random(0,100),100,100);
+  strokeWeight (2);
+  point (mouseX,mouseY);
+  Up++; 
+  if (mousePressed) {
+  circle (mouseX, mouseY - Up, 20);
+  }
+  }
+   //pressaddrectangle
+  void mousePressed() {
+    stroke (0);
+    fill (random (0,100), random(0,100),random(0,100));
+    rectMode (CENTER);
+    rect (mouseX,mouseY,20,20);
+    Up = 10;
+    circle (mouseX, mouseY - Up, 20);
+  }
+   //clicktochangebackground
+  void keyPressed() {
+  fill (0,0,100);
+  rect (500,500, 1000,1000);
+   }
+ 
