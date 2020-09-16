@@ -21,7 +21,7 @@ void draw ()
   text("PRESS FOR COLORS", 360, 520); 
   fill (0);
   textSize(40);
-  text("PRESS SPACE TO REMOVE PREVIOUS COLORS", 60, 900); 
+  text("PRESS ANY KEY TO REMOVE PREVIOUS COLORS", 50, 900); 
   
 }
   void mouseClicked() 
