@@ -1,3 +1,5 @@
+import processing.pdf.*;
+
 import processing.sound.*;
 Background B;
 Text T;
